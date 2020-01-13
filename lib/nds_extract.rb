@@ -89,7 +89,9 @@ def movies_with_directors_set(source)
     while inner_index < source[index][:movies].length do
       director = source[index][:name]
       film = source[index][:movies][inner_index][:title]
-      result << [{:director_name => director, :title => film}]
+      gross_ex = source[index][:movies][inner_index][:worldwide_gross]
+      studio_ex = source[index][:movies][inner_index][:studio]
+      result << [{:director_name => director, :title => film, :studio => studio_ex, :gross => gross_ex}]
       
       
       inner_index += 1
