@@ -50,7 +50,7 @@ def gross_per_studio(collection)
   index = 0
   
   while index < collection.length do
-    studio_name = collection[index][:movies]
+    studio_name = collection[index][:studio]
     money_made = collection[index][:worldwide_gross]
 
       
