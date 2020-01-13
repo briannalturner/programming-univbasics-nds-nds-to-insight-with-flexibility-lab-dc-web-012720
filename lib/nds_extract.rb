@@ -91,7 +91,7 @@ def movies_with_directors_set(source)
       film = source[index][:movies][inner_index][:title]
       gross_ex = source[index][:movies][inner_index][:worldwide_gross]
       studio_ex = source[index][:movies][inner_index][:studio]
-      result << [{:director_name => director, :title => film, :studio => studio_ex, :gross => gross_ex}]
+      result << [{:director_name => director, :title => film, :studio => studio_ex, :worldwide_gross => gross_ex}]
       
       
       inner_index += 1
