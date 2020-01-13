@@ -105,7 +105,6 @@ describe 'The directors_database method can be processed by the studios_totals m
     }
 
     it "correctly total 'Universal'" do
-      puts studios_totals(directors_database['Universal'])
       expect(studios_totals(directors_database)['Universal']).to eq(expected['Universal'])
     end
     it "correctly total 'Columbia'" do
